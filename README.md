@@ -1,44 +1,52 @@
-INI File Utilities
-This repository contains Python utilities for handling .ini files. These utilities provide functionalities like encoding conversion, GUI-based value selection, and value updates.
+# INI File Utilities
 
-Table of Contents
-Getting Started
-Usage
-Function Descriptions
-Contributing
-Getting Started
-To use these tools, simply run the corresponding Python script. Each script provides its own user interface for ease of use.
+This repository contains Python utilities for handling `.ini` files. These utilities provide functionalities such as encoding conversion, GUI-based value selection, and value updates.
 
-Usage
-A. INI File UTF-8 Converter
-Execute the A script.
-A GUI will prompt you to select a directory containing .ini files.
-The script will process each .ini file in the directory. If an .ini file is not in UTF-8 encoding, the script will convert it.
-B. INI File Value Selector and Updater
-Execute the B script.
-A GUI will prompt you to select an .ini file.
-Another GUI will allow you to select values for "Jpg Resize" and "Jpg Qfactor".
-The selected values will be updated or added in the .ini file under the corresponding sections.
-C. INI File Direct Updater
-Execute the C script.
-A GUI will prompt you to select an .ini file.
-The script will then directly set "Jpg Resize" to '50' and "Jpg Qfactor" to '70' for all relevant sections in the .ini file.
-Function Descriptions
-change_encoding_to_utf8(filepath)
-Purpose: Checks the encoding of a file and converts it to UTF-8 if it's not already in UTF-8.
-Parameters:
-filepath: Path of the .ini file to be checked and potentially converted.
-select_ini_file()
-Purpose: Provides a GUI for selecting an .ini file.
-Returns: Path of the selected .ini file.
-get_user_input()
-Purpose: Provides a GUI to select values for "Jpg Resize" and "Jpg Qfactor".
-Returns: Tuple containing the selected values.
-update_ini(file_path, resize_value, qfactor_value)
-Purpose: Updates the .ini file with selected or predefined values.
-Parameters:
-file_path: Path of the .ini file to be updated.
-resize_value: Value for "Jpg Resize".
-qfactor_value: Value for "Jpg Qfactor".
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Ensure to update tests as appropriate.
+## Table of Contents
+
+- [INI File UTF-8 Converter (A Code)](#ini-file-utf-8-converter-a-code)
+- [INI File Value Selector (B Code)](#ini-file-value-selector-b-code)
+- [INI File Updater (C Code)](#ini-file-updater-c-code)
+- [Usage](#usage)
+
+## INI File UTF-8 Converter (A Code)
+
+This Python utility (A Code) converts the encoding of `.ini` files within a chosen directory to UTF-8, if they are not already in UTF-8.
+
+### Usage for A Code:
+
+1. Execute the Python script.
+2. When the pop-up window appears, navigate to and select the directory containing your `.ini` files.
+3. The script will process each `.ini` file in the directory. If an `.ini` file is not in UTF-8 encoding, the script will convert it.
+
+### Function Descriptions for A Code:
+
+#### `change_encoding_to_utf8(filepath)`
+- **Purpose**: Checks the encoding of a file and converts it to UTF-8 if it's not already.
+- **Parameters**: `filepath` - Path of the `.ini` file to be checked and potentially converted.
+
+## INI File Value Selector (B Code)
+
+B Code provides a GUI for the user to select certain values, which can then be written to an `.ini` file.
+
+### Usage for B Code:
+
+1. Execute the Python script.
+2. Use the pop-up GUI to select the desired `.ini` file.
+3. Use the subsequent GUI to select values for 'Jpg Resize' and 'Jpg Qfactor'.
+4. The selected values will be written to the `.ini` file under relevant sections.
+
+## INI File Updater (C Code)
+
+The C Code allows the user to automatically set specific values (`Jpg Resize` and `Jpg Qfactor`) in an `.ini` file.
+
+### Usage for C Code:
+
+1. Execute the Python script.
+2. Use the pop-up GUI to select the desired `.ini` file.
+3. The script will automatically update the `.ini` file with preset values for 'Jpg Resize' and 'Jpg Qfactor'.
+
+### Note:
+
+Remember to backup your `.ini` files before making any changes, to prevent accidental data loss.
+
