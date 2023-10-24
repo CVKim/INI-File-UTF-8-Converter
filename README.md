@@ -50,3 +50,4 @@ The C Code allows the user to automatically set specific values (`Jpg Resize` an
 
 Remember to backup your `.ini` files before making any changes, to prevent accidental data loss.
 
+
